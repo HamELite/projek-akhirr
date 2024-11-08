@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek final ilham</title>
+    <link rel="stylesheet" href="akhir.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="box1">
+            <div class="logo">LayananKami</div>
+            <nav class="kkk">
+                <a href="#kontak" id="k">Kontak</a>
+                <a href="#fitur" id="f">Fitur</a>
+                <a href="#carakerja" id="c">Cara Kerja</a>
+                <a href="#testimoni" id="t">Testimoni</a>
+                <a href="#galeri" id="g">Galeri</a>
+<button class="btn" onclick="location.href='halaman2.html'">Halaman 2</button>            </nav>
+        </div>
+    </header>
+
+    <section class="awal">
+        <div class="Pembuka">
+            <h1>Selamat datang di <span>Layanan Kami</span></h1>
+            <p>Menyediakan solusi terbaik untuk kebutuhan bisnis Anda.</p>
+            <a href="#kontak" class="btn-hub ">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2 id="kontak">Kontak Kami</h2>
+        <form id="dataForm">
+            <label for="name">Nama</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required oninput="validateEmail()" placeholder="@gmail.com">
+
+            <label for="status">Status</label>
+            <select id="status">
+            <option value="Aktif">Aktif</option>
+            <option value="Tidak Aktif">Tidak Aktif</option>
+            <option value="Menunggu">Menunggu</option>
+            </select>
+
+            <button type="button" onclick="addToTable()">Tambah ke Tabel</button>
+        </form>
+    </section>
+
+
+    <section class="table-section">
+        <h2>Tabel Data</h2>
+        <table id="dataTable" class="cot">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="akhir.js"></script>
+
+     <h2> Fitur Utama Kami <h2>
+        </div><tion id="fitur">
+        <div class="jsecdl-fitur">
+          
+
+        <div class="isi">
+            <ul>
+                <li>Fitur 1 : Layanan Berkualitas Tinggi</li>
+                <li>Fitur 2 : Dukungan 24/7</li>
+                <li>Fitur 3 : Solusi yang Dapat DIsesuaikan</li>
+                <li>Fitur 4 : Harga Terjangkau</li>
+            </ul>
+        </div>
+    </section>
+
+        <section id="carakerja">
+            <div class="jdl-carakerja">
+                <h2>Cara Kerja</h2>
+            </div>
+    
+            <div class="isi2">
+                <ol>
+                    <li>Langkah 1 : Hubungi Kami</li>
+                    <li>Langkah 2 : Diskusikan Kebutuhan Anda</li>
+                    <li>Langkah 3 : Dapatkan Proposal Khusus</li>
+                    <li>Langkah 4 : Luncurkan Proyek</li>
+                </ol>
+            </div>
+        </section>
+        
+        <section id="testimoni">
+        <div class="komentar1">
+            <h2>Apa Kata Klien Kami</h2>
+        </div>
+        
+        <div class="testimoni">
+            <div class="komentar"><br>
+                <p>"Pengalaman kami dengan layanan ini sangat luar biasa Tim sangat profesional dan dapat diandalkan.</p>
+                <div class="orang">
+                    -Alex Jhonson
+                </div>
+            </div>
+
+            <div class="komentar"><br>
+                <p>"Mereka melebihi harapan kami dalam segala hal. Sangat merekomendasikan layanan mereka."</p>
+                <div class="orang">
+                    -Sarah Wiliams
+                </div>
+            </div>
+        </div>
+        </section>
+        
+
+        <div id="galery" class="judul">
+<h2>Galery Karya Kami</h2>
+        </div>
+        <div class="album">
+<img src="https://i.pinimg.com/236x/24/98/0d/24980d4bbadf4904f155b99f319b1d24.jpg" alt="album1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpVdL0ZS3kJpPWiz152zCBwejTOIiYCCbog&s" alt="album2">
+<img src="data:image/jpeg;base64,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" alt="album3">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWYLQUDVYHKvdm9hkMpLobmj07jIARGnF2g&s" alt="album4">
+</div>
+<div class="aud">
+    <div class="top">Copyright by HAM ELITE</div>
+</body>
+
+</html
